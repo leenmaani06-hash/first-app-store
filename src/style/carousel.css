@@ -1,0 +1,135 @@
+:root {
+    --main-color:#E8B4B8;
+    --secondary-color:#F7F4F0;
+    --therd-color:#F0F0F0;
+    --text-color:#212529;
+    --subtext-color:#6c757d;
+}
+
+/* خلفية الحاوية الرئيسية ومحاذاة اتجاه الكتابة */
+
+
+.rtl-carousel {
+  background-color: #f7f3ee;
+  border-radius: 16px;
+  padding: 40px 60px; /* زدنا الـ 60px من الطرفين عشان الأسهم تأخذ راحتها وما تدخل بالكلام */
+  direction: rtl;
+}
+
+.carousel-item .row {
+  min-height: 400px;
+  padding: 20px 0;
+}
+
+@media (max-width: 767px) {
+  .carousel-item .row {
+  min-height: auto;
+  padding: 20px 0 40px;
+}
+}
+
+/* تكييف ارتفاع الصور */
+.carousel-img {
+  max-height: 350px;
+  width: auto;
+  object-fit: contain;
+}
+
+@media (max-width: 767px) {
+  .carousel-img {
+  max-height: 220px;
+  width: 80%;
+}
+}
+
+/* دفع أسهم Bootstrap للأطراف تماماً */
+.carousel-control-prev {
+  right: 10px !important;
+  width: 50px;
+}
+
+.carousel-control-next {
+  left: 10px !important;
+  width: 50px;
+}
+
+/* إعطاء مساحة أمان داخلية للسلايدر من الطرفين */
+.carousel-inner {
+  padding-right: 70px;
+  padding-left: 70px;
+}
+/* شارة الخصم الدائرية الورديّة */
+.discount-badge {
+  position: absolute;
+  top: -20px;
+  right: -7%; /* مكان ممتاز بالنسبة للجهة اليسرى */
+  background-color: var(--main-color);
+  color: white;
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  z-index: 2;
+}
+
+@media (max-width: 767px){
+  .carousel {
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+  }
+}
+
+.discount-badge strong {
+  font-size: 18px;
+}
+
+/* تنسيق العناوين والنصوص */
+.hero-title {
+  font-weight: 800;
+  color: #212529;
+  font-size: 2.2rem;
+  margin-bottom: 15px;
+}
+
+@media (max-width: 796px) {
+  .hero-title {
+  font-weight: 800;
+  color: #212529;
+  font-size: 25px;
+  margin-bottom: 12px;
+}
+}
+
+.hero-desc {
+  color: #6c757d;
+  font-size: 17px;
+  margin-bottom: 25px;
+}
+.btn-dark:hover {
+  background-color: var(--subtext-color);
+}
+
+@media (max-width: 796px) {
+  .hero-desc {
+  color: #6c757d;
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+}
+
+@media (max-width: 796px) {
+  .btn-carousel {
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .carousel-item .container-fluid {
+  padding-left: 15px !important;
+  padding-right: 15px !important;
+}
+}

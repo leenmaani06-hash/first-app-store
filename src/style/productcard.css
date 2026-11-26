@@ -1,0 +1,86 @@
+h1,h2,span,h5,h4 {
+    font-style: italic;
+}
+p,button {
+    font-style: oblique;
+}
+a {
+    
+}
+ 
+:root {
+    --main-color:#E8B4B8;
+    --secondary-color:#F7F4F0;
+    --therd-color:#F0F0F0;
+    --title-color:#212529;
+    --subtext-color:#6c757d;
+
+}
+
+.title-h2 {
+    font-size: 47px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    margin-left: 5px;
+}
+@media (max-width: 767px) { 
+    .title-h2 {
+        font-size: 40px;
+         margin-bottom: 20px;
+          margin-left: 20px;
+    }
+    .card {
+        width: 20rem;
+    }
+}
+.card {
+    background-color: var(--secondary-color) !important;
+    border-radius: 7px;
+    box-shadow: 2px 2px 3px #6c757d8d;
+    overflow: hidden;
+    transition: 0.3s;
+
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 2px 2px 3px #e8b4b8e0;
+
+}
+
+
+.btn-outline-success {
+    
+    background-color: var(--title-color) !important;
+    color: var(--secondary-color) !important;
+    
+}
+.card-text {
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+     font-size: 15px; 
+     color: var(--subtext-color);
+} 
+.card-title {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    font-weight: 700;
+   font-size: 20px;
+   
+}
+
+.btn-outline-success:hover {
+     background-color: var(--subtext-color) !important;
+   
+}
+
+@media (max-width: 767px) {
+    .col-md-4 {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
